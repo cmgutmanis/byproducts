@@ -5,6 +5,6 @@ $webAppName = WEB_APP_NAME_HERE
 
 Login-AzureRmAccount
 
-New-AzureRmResourceGroup -Name "test-rg" -Location "northcentralus"
+New-AzureRmResourceGroup -Name $resourceGroupName -Location $resourceGroupLocation
 New-AzureRmAppServicePlan -Location $resourceGroupLocation -Name $appServicePlanName -ResourceGroupName $resourceGroupName
 New-AzureRmWebApp -ResourceGroupName $resourceGroupName -Name $webAppName -AppServicePlan $appServicePlanName
