@@ -8,6 +8,8 @@ choco install git -y
 choco install sql-server-management-studio -y
 choco install azurepowershell -y
 choco install postman -y
+choco install docker-desktop -y
+choco install azure-cli -y
 
 # browsers
 choco install firefox -y
